@@ -16,4 +16,8 @@ runs = 256
 optimizer = true
 optimizer_runs = 1000000
 
+# 2. EXCLUSION: Exclude the large VRFCoordinatorV2_5Mock from the default build.
+# This solves the EIP-170 error for your standard compilation.
+excluded_contracts = ["VRFCoordinatorV2_5Mock"]
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
