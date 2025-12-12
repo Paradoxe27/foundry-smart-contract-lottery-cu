@@ -11,4 +11,9 @@ fs_permissions = [
 [fuzz]
 runs = 256
 
+# 1. OPTIMIZATION: Ensure your production contracts are highly optimized.
+# A high runs value helps reduce contract size and gas costs.
+optimizer = true
+optimizer_runs = 1000000
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
